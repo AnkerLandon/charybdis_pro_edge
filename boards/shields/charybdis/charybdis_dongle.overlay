@@ -14,17 +14,9 @@
         rows = <0>;
         events = <0>;
     };
+};
 
-    /* Tells the OS to create a virtual trackball software device on the dongle */
-    vtrackball: virtual_input_trackball {
-        compatible = "zmk,virtual-input";
-        status = "okay";
-    };
-
-    /* Maps wireless incoming trackball coordinates into that virtual device */
-    input_relay_config_trackball {
-        compatible = "zmk,split-peripheral-input-relay";
-        device = <&vtrackball>;
-        relay-channel = <111>;
-    };
+/* Enable the trackball input listener (disabled by default in split_input_common.dtsi) */
+&trackball_listener {
+    status = "okay";
 };
