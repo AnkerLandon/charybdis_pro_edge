@@ -64,24 +64,28 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <2000>;
+            tapping-term-ms = <210>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <250>;
-            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            require-prior-idle-ms = <125>;
+            hold-trigger-key-positions = <KEYS_R THUMBS 48 49 50 51 52 54 53 55 42 43 44 45 46 47 35 34 23 22 33 32 31 30 18 19 20 21 11 10 9 8 7 6>;
             hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
+
+            label = "HML";
         };
 
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <2000>;
+            tapping-term-ms = <210>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <250>;
-            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            require-prior-idle-ms = <125>;
+            hold-trigger-key-positions = <KEYS_L THUMBS 0 12 24 36 37 25 13 1 2 14 26 38 39 27 15 3 4 5 17 16 28 29 40 41 48 49 50 51 52 54 53 55>;
             hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
+
+            label = "HMR";
         };
 
         hml_s: hml_s {
@@ -131,17 +135,17 @@
 
         LeftClickRight {
             bindings = <&mkp LCLK>;
-            key-positions = <19 20>;
+            key-positions = <43 44>;
         };
 
         RightClickRight {
             bindings = <&mkp RCLK>;
-            key-positions = <20 21>;
+            key-positions = <44 45>;
         };
 
         MiddleClickRight {
             bindings = <&mkp MCLK>;
-            key-positions = <21 22>;
+            key-positions = <43 44 45>;
         };
 
         ParaLeft {
@@ -183,11 +187,6 @@
             bindings = <&caps_word>;
             key-positions = <27 28 31 32>;
         };
-
-        MiddleClick {
-            bindings = <&mkp MCLK>;
-            key-positions = <49 52>;
-        };
     };
 
     chosen { zmk,physical-layout = &charybdis_6col_layout; };
@@ -198,12 +197,12 @@
         BASE {
             display-name = "BASE";
             bindings = <
-&kp ESC                            &kp LS(NUMBER_1)  &kp LS(N2)  &kp LS(N3)          &kp LS(N4)     &kp LS(N5)    &kp LS(N6)  &kp LS(N7)  &kp LS(N8)           &kp LS(N9)  &kp LS(N0)  &kp BACKSPACE
-&kp TAB                            &kp SQT           &kp COMMA   &kp PERIOD          &kp P          &kp Y         &kp F       &kp G       &kp C                &kp R       &kp L       &kp NON_US_BACKSLASH
-&u_mt LEFT_SHIFT LEFT_PARENTHESIS  &kp A             &kp O       &u_mt LEFT_SHIFT E  &kp U          &kp I         &kp D       &kp H       &u_mt RIGHT_SHIFT T  &kp N       &kp S       &u_mt RIGHT_SHIFT RIGHT_PARENTHESIS
-&kp LEFT_CONTROL                   &kp SEMICOLON     &kp Q       &kp J               &kp K          &kp X         &kp B       &kp M       &kp W                &kp V       &kp Z       &u_mt RIGHT_SHIFT SLASH
-                                                                 &kp LEFT_ALT        &u_lt 5 SPACE  &mo 1         &mkp RCLK   &mkp LCLK
-                                                                                     &mo 2          &kp ENTER     &kp SPACE
+&hml ESC GRAVE                     &kp LS(NUMBER_1)     &kp LS(N2)       &kp LS(N3)       &kp LS(N4)  &kp LS(N5)    &kp LS(N6)  &kp LS(N7)     &kp LS(N8)        &kp LS(N9)        &kp LS(N0)            &kp BACKSPACE
+&kp TAB                            &kp SQT              &kp COMMA        &kp PERIOD       &kp P       &kp Y         &kp F       &kp G          &kp C             &kp R             &kp L                 &kp EQUAL
+&u_mt LEFT_SHIFT LEFT_PARENTHESIS  &hml LEFT_CONTROL A  &hml LEFT_ALT O  &hml LEFT_GUI E  &kp U       &kp I         &kp D       &kp H          &hmr RIGHT_GUI T  &hmr RIGHT_ALT N  &hmr RIGHT_CONTROL S  &u_mt RIGHT_SHIFT RIGHT_PARENTHESIS
+&none                              &u_lt 5 SEMICOLON    &kp Q            &kp J            &kp K       &kp X         &kp B       &kp M          &kp W             &kp V             &kp Z                 &u_mt RIGHT_SHIFT MINUS
+                                                                         &none            &kp DELETE  &none         &none       &kp BACKSPACE
+                                                                                          &none       &kp ENTER     &kp SPACE
             >;
         };
 
