@@ -6,6 +6,12 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
+config BT_MAX_CONN
+	default 7
+
+config BT_MAX_PAIRED
+	default 7
+
 endif
 
 if SHIELD_CHARYBDIS_DONGLE || SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT
