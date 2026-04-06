@@ -150,32 +150,32 @@
 
         ParaLeft {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <4 16>;
+            key-positions = <16 28>;
         };
 
         ParaRight {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <7 19>;
+            key-positions = <19 31>;
         };
 
         BrakLeft {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <3 15>;
+            key-positions = <15 27>;
         };
 
         BrakRight {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <8 20>;
+            key-positions = <20 32>;
         };
 
         BraceLeft {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <2 14>;
+            key-positions = <14 26>;
         };
 
         BraceRight {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <9 21>;
+            key-positions = <21 33>;
         };
 
         Delete {
@@ -199,8 +199,8 @@
             bindings = <
 &hml ESC GRAVE                     &kp LS(NUMBER_1)     &kp LS(N2)       &kp LS(N3)       &kp LS(N4)            &kp LS(N5)    &kp LS(N6)        &kp LS(N7)     &kp LS(N8)        &kp LS(N9)        &kp LS(N0)            &kp EQUAL
 &kp TAB                            &kp SQT              &kp COMMA        &kp PERIOD       &kp P                 &kp Y         &kp F             &kp G          &kp C             &kp R             &kp L                 &kp MINUS
-&u_mt LEFT_SHIFT LEFT_PARENTHESIS  &hml LEFT_CONTROL A  &hml LEFT_ALT O  &hml LEFT_GUI E  &kp U                 &kp I         &kp D             &kp H          &hmr RIGHT_GUI T  &hmr RIGHT_ALT N  &hmr RIGHT_CONTROL S  &u_mt RIGHT_SHIFT RIGHT_PARENTHESIS
-&kp SLASH                          &u_lt 5 SEMICOLON    &kp Q            &kp J            &kp K                 &kp X         &kp B             &kp M          &kp W             &kp V             &kp Z                 &kp BACKSLASH
+&kp SLASH                          &hml LEFT_CONTROL A  &hml LEFT_ALT O  &hml LEFT_GUI E  &kp U                 &kp I         &kp D             &kp H          &hmr RIGHT_GUI T  &hmr RIGHT_ALT N  &hmr RIGHT_CONTROL S  &kp BACKSLASH
+&u_mt LEFT_SHIFT LEFT_PARENTHESIS  &u_lt 5 SEMICOLON    &kp Q            &kp J            &kp K                 &kp X         &kp B             &kp M          &kp W             &kp V             &kp Z                 &u_mt RIGHT_SHIFT RIGHT_PARENTHESIS
                                                                          &mo 1            &kp DELETE            &kp LG(Z)     &hml LG(P) LG(C)  &kp BACKSPACE
                                                                                           &hmr RG(RA(S)) RG(S)  &kp ENTER     &kp SPACE
             >;
