@@ -15,7 +15,6 @@
     compatible = "zmk,input-processor-keybind";
     #input-processor-cells = <0>;
     mode = <1>;
-    track_remainders;
     bindings = <&kp RIGHT>, <&kp LEFT>, <&kp UP>, <&kp DOWN>;
     tick = <20>;
     wait-ms = <0>;
