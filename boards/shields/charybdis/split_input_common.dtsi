@@ -16,7 +16,7 @@
     #input-processor-cells = <0>;
     mode = <1>;
     bindings = <&kp RIGHT>, <&kp LEFT>, <&kp UP>, <&kp DOWN>;
-    tick = <40>;
+    tick = <80>;
     wait-ms = <0>;
     tap-ms = <10>;
   };
