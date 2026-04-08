@@ -16,7 +16,7 @@
     #input-processor-cells = <0>;
     mode = <1>;
     bindings = <&kp RIGHT>, <&kp LEFT>, <&kp UP>, <&kp DOWN>;
-    tick = <20>;
+    tick = <40>;
     wait-ms = <0>;
     tap-ms = <10>;
   };
@@ -48,7 +48,7 @@
 
     scroll {
       layers = <SCROLL>;
-      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 6>, <&zip_xy_to_scroll_mapper>;
+      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 8>, <&zip_xy_to_scroll_mapper>;
     };
 
     move {
